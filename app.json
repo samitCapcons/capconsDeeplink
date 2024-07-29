@@ -1,0 +1,85 @@
+{
+  "expo": {
+    "name": "capconsApp",
+    "slug": "capconsApp",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/images/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "bitcode": false,
+      "supportsTablet": true,
+      "bundleIdentifier": "com.samitcapcons.capconsApp",
+      "associatedDomains": [
+        "applinks:capcons-app-test.onelink.me"
+      ]
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#FFFFFF"
+      },
+      "package": "com.samitcapcons.capconsApp",
+      "softwareKeyboardLayoutMode": "pan",
+      "intentFilters": [
+        {
+          "action": "VIEW",
+          "data": [
+            {
+              "scheme": "https",
+              "host": "capcons-app-test.onelink.me",
+              "pathPrefix": "/scVs"
+            }
+          ],
+          "category": [
+            "BROWSABLE",
+            "DEFAULT"
+          ]
+        },
+        {
+          "action": "VIEW",
+          "data": [
+            {}
+          ],
+          "category": [
+            "BROWSABLE",
+            "DEFAULT"
+          ]
+        }
+      ]
+    },
+    "web": {
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      [
+        "react-native-appsflyer",
+        {}
+      ],
+      [
+        "./custom_plugins/withNoBitcode"
+      ],
+      [
+        "expo-tracking-transparency",
+        {
+          "userTrackingPermission": "Allowing app tracking will improve the customization of ads"
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "98d228af-380d-4eeb-9daf-e0f02ff6fe56"
+      }
+    }
+  }
+}
